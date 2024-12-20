@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validator</title>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+<link rel="stylesheet" href="./page.css">
+</head>
+<body>
+    <div>
+        <input type="radio" id="toggle-section-physique" name="toggle" checked >
+        <label for="toggle-section-physique">Physique</label><br>
+        <input type="radio" id="toggle-section-moral" name="toggle">
+        <label for="toggle-section-moral">Moral</label><br>
+    </div>
+    <br><br>
+    <form id="form" method="post" action="#">
+       <section class="sec-1 active">
+        <div>
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" />
+            <br><br>
+          </div>
+          <br><br>
+          <div>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" />
+            <br><br>
+          </div>
+          <div>
+            <label for="common-input">Information commune :</label>
+            <input type="text" id="common-input-sec-1" name="common-input" />
+            <br><br>
+        </div>
+       </section>
+
+       <section class="sec-2" style="display: none;"  >
+        <div>
+            <label for="phone">Téléphone :</label>
+            <input type="text" id="phone" name="phone" />
+            <br><br>
+        </div>
+        <br><br>
+        <div>
+            <label for="address">Adresse :</label>
+            <input type="text" id="address" name="address" />
+            <br><br>
+        </div>
+        <div>
+            <label for="common-input">Information commune :</label>
+            <input type="text" id="common-input-sec-2" name="common-input" />
+            <br><br>
+        </div>
+    </section>
+
+        <br><br>
+        <button type="submit" id="custom-submit">Submit</button><br><br>
+        <button type="button" id="clear-errors">Effacer les erreurs</button>
+      </form>
+      
+
+   <script src="./page.js"></script>
+   <script>
+    const validate = new window.JustValidate('#form');
+  </script>
+</body>
+</html>

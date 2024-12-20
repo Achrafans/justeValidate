@@ -1,0 +1,52 @@
+/* Style des champs d'entrée */
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Style des messages d'erreur */
+.just-validate-error-label {
+    color: red;
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+/* Style des boutons */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Style pour le bouton de suppression des erreurs */
+#clear-errors {
+    background-color: #28a745;
+}
+
+#clear-errors:hover {
+    background-color: #218838;
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
